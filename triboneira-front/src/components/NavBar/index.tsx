@@ -8,8 +8,8 @@ function Navbar() {
       <div className={ styles.navSpace }>
         <nav className={ styles.navLink }>
           <NavLink to="/"><Button text="Home" type="button" /></NavLink>
-          <NavLink to="/login"><Button text="Sobre a Tribo" type="button" /></NavLink>
-          <NavLink to="/register"><Button text="Contato" type="button" /></NavLink>
+          <NavLink to="/about"><Button text="Sobre a Tribo" type="button" /></NavLink>
+          <NavLink to="/contact"><Button text="Contato" type="button" /></NavLink>
         </nav>
       </div>
     </div>
