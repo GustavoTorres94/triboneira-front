@@ -1,0 +1,65 @@
+{
+  "hash": "86a7e0f3",
+  "browserHash": "68c96951",
+  "optimized": {
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "7c1d07cd",
+      "needsInterop": true
+    },
+    "react-redux": {
+      "src": "../../node_modules/react-redux/es/index.js",
+      "file": "react-redux.js",
+      "fileHash": "799bca0a",
+      "needsInterop": false
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "fcc785bf",
+      "needsInterop": false
+    },
+    "redux": {
+      "src": "../../node_modules/redux/es/redux.js",
+      "file": "redux.js",
+      "fileHash": "efc5db44",
+      "needsInterop": false
+    },
+    "redux-thunk": {
+      "src": "../../node_modules/redux-thunk/es/index.js",
+      "file": "redux-thunk.js",
+      "fileHash": "13121d67",
+      "needsInterop": false
+    },
+    "@redux-devtools/extension": {
+      "src": "../../node_modules/@redux-devtools/extension/lib/esm/index.js",
+      "file": "@redux-devtools_extension.js",
+      "fileHash": "fccac633",
+      "needsInterop": false
+    },
+    "react-router": {
+      "src": "../../node_modules/react-router/dist/index.js",
+      "file": "react-router.js",
+      "fileHash": "b533f09e",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-DMLCZ64Z": {
+      "file": "chunk-DMLCZ64Z.js"
+    },
+    "chunk-C7VVT7PN": {
+      "file": "chunk-C7VVT7PN.js"
+    },
+    "chunk-CUI7DDSA": {
+      "file": "chunk-CUI7DDSA.js"
+    },
+    "chunk-C2ZNC3QJ": {
+      "file": "chunk-C2ZNC3QJ.js"
+    },
+    "chunk-UXIASGQL": {
+      "file": "chunk-UXIASGQL.js"
+    }
+  }
+}
