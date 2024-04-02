@@ -9,3 +9,17 @@ export type NavButtonProps = {
   text: string;
   type: 'button' | 'submit' | 'reset';
 };
+
+export type SideCardProps = {
+  image: string;
+  streamer: string;
+};
+
+export type StreamType = {
+  streamerName: string;
+  game: string;
+  title?: string;
+  status: string;
+  viewers?: number;
+  image?: string;
+};
