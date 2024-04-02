@@ -1,0 +1,53 @@
+.toolTipContainer {
+  position: relative;
+  display: inline-block;
+  max-width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  justify-content: center;
+  font-size: medium;
+}
+
+.streamerContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;  
+  max-width: auto; 
+  font-size: medium;
+  padding-left: 5px;
+}
+
+.streamerContainer p {
+  color: #cfb7ff;
+  padding-right: 15px;
+}
+
+.streamerContainer span {
+  padding-right: 15px;
+}
+
+.titleContainer {
+  position: relative;
+  display: flex;
+  max-width: auto;
+  width: 100%;
+  font-size: medium;
+  flex-grow: 1;
+}
+
+.infoContainer {
+  position: relative;
+  display: flex;
+  max-width: auto;
+  width: 100%;
+  font-size: medium;
+}
+
+.infoContainer img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 3px;
+}
