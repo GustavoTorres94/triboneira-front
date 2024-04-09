@@ -1,32 +1,30 @@
 import { AnyAction } from 'redux';
-import { StreamerReturnType, StreamType } from '../../types';
 import {
   GET_STREAMS_ERROR,
   GET_STREAMS_START,
-  GET_STREAMS_SUCCESS,
+  GET_USERS_STREAMS_SUCCESS,
 } from '../actions/actionsTypes';
+import { UserReturnType, UserStreamType } from '../../types';
 
-const INITIAL_STATE: StreamerReturnType = {
+const INITIAL_STATE: UserReturnType = {
   data: [],
 };
 
-const stream = (state = INITIAL_STATE, action: AnyAction) => {
+const userStreams = (state = INITIAL_STATE, action: AnyAction) => {
   switch (action.type) {
     case GET_STREAMS_START:
       return {
         ...state,
         isLoading: true,
       };
-    case GET_STREAMS_SUCCESS:
+    case GET_USERS_STREAMS_SUCCESS:
       return {
         ...state,
-        data: action.payload.map((e: StreamType) => ({
-          streamerName: e.user_name,
-          game: e.game_name,
-          title: e.title,
-          status: e.type,
-          viewers: e.viewer_count,
-          image: e.thumbnail_url,
+        data: action.payload.map((e: UserStreamType) => ({
+          id: e.id,
+          login: e.login,
+          display_name: e.display_name,
+          profile_image_url: e.profile_image_url,
         })),
         isLoading: false,
       };
@@ -41,4 +39,4 @@ const stream = (state = INITIAL_STATE, action: AnyAction) => {
   }
 };
 
-export default stream;
+export default userStreams;

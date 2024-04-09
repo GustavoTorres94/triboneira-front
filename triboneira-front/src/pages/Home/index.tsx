@@ -1,6 +1,16 @@
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getAllStreams } from '../../redux/actions';
+import { AppDispatch } from '../../types';
 import styles from './Home.module.css';
 
 function Home() {
+  const dispatch = useDispatch<AppDispatch>();
+
+  useEffect(() => {
+    dispatch(getAllStreams());
+  }, [dispatch]);
+
   return (
     <div className={ styles.homeContainer }>
       <h1>Home</h1>
