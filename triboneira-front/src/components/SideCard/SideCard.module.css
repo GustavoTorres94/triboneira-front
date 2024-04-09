@@ -1,17 +1,18 @@
 .sideCard {
-  /* background-color: aqua; */
   padding: 6px 3px 6px 3px;
   margin-bottom: 5px;
+  transition: transform 0.2s ease-out;
 }
 
 .sideCard img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* background-color: red; */
   border-radius: 50%;
 }
 
 .sideCard:hover {
   background-color: rgba(80, 97, 248, 0.250);
+  transform: translateY(-5px);
+  transform: scale(1.1);
 }

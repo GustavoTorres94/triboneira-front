@@ -1,22 +1,31 @@
+import { ToolTipProps } from '../../types';
 import styles from './ToolTip.module.css';
 
-function ToolTipComponet() {
+function ToolTipComponet({
+  userName,
+  gameName,
+  title,
+  type,
+  viewerCount,
+}: ToolTipProps) {
   return (
     <div className={ styles.toolTipContainer }>
       <div className={ styles.streamerContainer }>
-        <p>Stream name</p>
+        <p>{userName}</p>
         <span> - </span>
-        <p>stream game</p>
+        <p>{gameName}</p>
       </div>
       <div className={ styles.titleContainer }>
         <p>
-          stream title
+          {title}
         </p>
       </div>
       <div className={ styles.infoContainer }>
-        <p>status |</p>
+        <p>
+          {type}
+        </p>
         <img src="src/assets/user-solid.svg" alt="user-solid-fontawesome" />
-        <p>viewers</p>
+        <p>{`${viewerCount} viewers`}</p>
       </div>
     </div>
   );
