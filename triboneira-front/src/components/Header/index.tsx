@@ -16,8 +16,10 @@ function Header() {
         <p className={ styles.subtitle }>A Tribo cuida da Tribo!</p>
         <div className={ styles.infoRegisterLogin }>
           <p>Já possuí Cadastro?</p>
-          <NavLink to="/login" className={ styles.link }>Login</NavLink>
-          <NavLink to="/register" className={ styles.link }>Cadastre-se</NavLink>
+          <div className={ styles.linkInfo }>
+            <NavLink to="/login" className={ styles.link }>Login</NavLink>
+            <NavLink to="/register" className={ styles.link }>Cadastre-se</NavLink>
+          </div>
         </div>
       </div>
     </div>

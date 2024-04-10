@@ -35,6 +35,7 @@ export const getStreams = async () => {
         },
       },
     );
+    console.log('request feita streams');
     const data = await response.json();
     return data.data;
   } catch (error) {
@@ -54,6 +55,7 @@ export const getUsersStreams = async () => {
         },
       },
     );
+    console.log('request feita users');
     const data = await response.json();
     return data.data;
   } catch (error) {

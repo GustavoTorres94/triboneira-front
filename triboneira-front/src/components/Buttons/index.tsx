@@ -1,8 +1,15 @@
 import { NavButtonProps } from '../../types';
 
-function Button({ text, type }: NavButtonProps) {
+function Button({ text, type, onClick }: NavButtonProps) {
+  const handle = () => {
+    if (onClick) {
+      console.log('Button clicked');
+      onClick();
+    }
+  };
+
   return (
-    <button type={ type }>{ text }</button>
+    <button type={ type } onClick={ handle }>{ text }</button>
   );
 }
 

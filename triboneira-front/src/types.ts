@@ -8,6 +8,7 @@ export type AppDispatch = ThunkDispatch<ReduxState, null, AnyAction>;
 export type NavButtonProps = {
   text: string;
   type: 'button' | 'submit' | 'reset';
+  onClick?: () => void;
 };
 
 export type SideCardProps = {
@@ -54,4 +55,13 @@ export type UserStreamType = {
 
 export type UserReturnType = {
   data: UserStreamType[];
+};
+
+export type RegisterFormType = {
+  name: string;
+  lastName: string;
+  birthDate: string;
+  nickname: string;
+  email: string;
+  password: string;
 };
