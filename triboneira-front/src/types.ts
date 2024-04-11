@@ -9,6 +9,7 @@ export type NavButtonProps = {
   text: string;
   type: 'button' | 'submit' | 'reset';
   onClick?: () => void;
+  isDisabled?: boolean | undefined;
 };
 
 export type SideCardProps = {
@@ -64,4 +65,8 @@ export type RegisterFormType = {
   nickname: string;
   email: string;
   password: string;
+};
+
+export type StorageValueType = {
+  value: string | number | boolean | object | Array<any>;
 };
