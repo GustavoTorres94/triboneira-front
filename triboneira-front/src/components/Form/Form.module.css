@@ -1,7 +1,113 @@
 .successColor {
-  color: green;
+  color: var(--success-color);
 }
 
 .errorColor {
-  color: red;
+  color: var(--error-color);
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.container ul li {
+  list-style: none;
+}
+
+.userFormContainer {
+  display: flex;
+  padding: 55px 55px 5px 55px;
+  flex-direction: column;
+  margin: auto 0;
+  justify-content: center;
+}
+
+.userFormContainer label { 
+  width: 100%;
+  margin: 0 10px 3px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+}
+
+.userFormContainer label input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--input-focus-color);
+}
+
+.userFormContainer label input:focus {
+  border: 1px solid #000;
+}
+
+.userFormContainer ul li {
+  position: relative;
+  top: -10px;
+}
+
+.birthContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.birthContainer label {
+  position: relative;
+  top: -15px;
+}
+
+.birthContainer label input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--input-focus-color);}
+
+.mailContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+
+.mailContainer ul li {
+  position: relative;
+  top: -15px;
+}
+
+.mailContainer label {
+  position: relative;
+  top: -15px;
+}
+
+.mailContainer label input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--input-focus-color);}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.buttonsContainer button {
+  padding: 10px;
+  width: 150px;
+  border-radius: 5px;
+  border: 1px solid var(--input-focus-color);
+  background-color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
 }

@@ -1,6 +1,23 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --info-color: #17a2b8;
+  --warning-color: #ffc107;
+  --error-color: #dc3545;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --input-focus-color: #44c4ff;
+  --background-color: #f8f9fa;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }

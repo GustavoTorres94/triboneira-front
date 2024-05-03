@@ -5,12 +5,10 @@
   max-width: 1400px;
   height: 700px;
   margin: 0 auto;
-  /* background-color: #282c34; */
 }
 
 .main {
   display: flex;
-  /* background-color: aqua; */
   justify-content: space-between;
   top: 100px;
   width: 80%;
@@ -24,7 +22,6 @@
   align-items: center;
   width: 50%;
   height: 100%;
-  /* background-color: red; */
 }
 
 .formSide {
@@ -34,5 +31,19 @@
   align-items: center;
   width: 50%;
   height: 100%;
-  /* background-color: blue; */
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.list li {
+  list-style: none;
+  margin: 10px;
 }

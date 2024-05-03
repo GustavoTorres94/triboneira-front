@@ -74,124 +74,134 @@ function Form() {
   };
 
   return (
-    <form onSubmit={ handleSubmit }>
-      <label htmlFor="name">
-        <p>Nome</p>
-        <input
-          type="text"
-          name="name"
-          value={ name }
-          placeholder="Digite seu Nome"
-          onChange={ handleChange }
-        />
-      </label>
-      <label htmlFor="lastName">
-        <p>Sobrenome</p>
-        <input
-          type="text"
-          name="lastName"
-          value={ lastName }
-          placeholder="Digite seu Sobrenome"
-          onChange={ handleChange }
-        />
-      </label>
-      <ul>
-        <li>
-          <small className={ isValidUser ? styles.successColor : styles.errorColor }>
-            Nome não pode conter números ou caractéres especiais.
-          </small>
-        </li>
-      </ul>
-      <label htmlFor="birthDate">
-        <p>Data de Nascimento</p>
-        <input
-          type="date"
-          name="birthDate"
-          value={ form.birthDate }
-          placeholder="DD/MM/AA"
-          onChange={ handleChange }
-        />
-      </label>
-      <label htmlFor="nickname">
-        <p>Apelido/NickName</p>
-        <input
-          type="text"
-          name="nickname"
-          value={ nickname }
-          placeholder="Digite seu Apelido/NickName"
-          onChange={ handleChange }
-        />
-      </label>
-      <ul>
-        <li>
-          <small className={ isValidNickLen ? styles.successColor : styles.errorColor }>
-            O Nick/Apelido deve ser entre 3 e 12 letras.
-          </small>
-        </li>
-        <li>
-          <small className={ isValidNick ? styles.successColor : styles.errorColor }>
-            O Nick/Apelido não pode ter caractéres especiais.
-          </small>
-        </li>
-      </ul>
-      <label htmlFor="email">
-        <p>Email</p>
-        <input
-          type="email"
-          name="email"
-          value={ email }
-          placeholder="Ex: email@email.com"
-          onChange={ handleChange }
-        />
-      </label>
-      <ul>
-        <li>
-          <small className={ isValidEmail ? styles.successColor : styles.errorColor }>
-            O Email deve ser válido.
-          </small>
-        </li>
-      </ul>
-      <label htmlFor="confirmEmail">
-        <p>Confime o Email</p>
-        <input
-          type="email"
-          name="confirmEmail"
-          value={ confirmEmail }
-          placeholder="Confirme seu Email"
-          onChange={ handleChange }
-        />
-      </label>
-      {
-        email !== confirmEmail && (
-          <small className={ styles.errorColor }>
-            Emails não são iguais. Verifique.
-          </small>
-        )
-      }
-      <label htmlFor="password">
-        <p>Senha</p>
-        <input
-          type="password"
-          name="password"
-          value={ password }
-          placeholder="Digite sua Senha"
-          onChange={ handleChange }
-        />
-      </label>
-      <ul>
-        <li>
-          <small
-            className={ isValidPasswordLen ? styles.successColor : styles.errorColor }
-          >
-            Senha deve ter no mínimo 8 caractéres.
-          </small>
-        </li>
-        <li>
-          <small className={ isValidPassword ? styles.successColor : styles.errorColor }>
-            Senha deve ter ao menos uma letra maiúscula e um caractér especial.
-          </small>
-        </li>
-      </ul>
+    <form onSubmit={ handleSubmit } className={ styles.container }>
+      <div className={ styles.userFormContainer }>
+        <div>
+          <label htmlFor="name">
+            <p>Nome</p>
+            <input
+              type="text"
+              name="name"
+              value={ name }
+              placeholder="Digite seu Nome"
+              onChange={ handleChange }
+            />
+          </label>
+          <label htmlFor="lastName">
+            <p>Sobrenome</p>
+            <input
+              type="text"
+              name="lastName"
+              value={ lastName }
+              placeholder="Digite seu Sobrenome"
+              onChange={ handleChange }
+            />
+          </label>
+        </div>
+        <ul>
+          <li>
+            <small className={ isValidUser ? styles.successColor : styles.errorColor }>
+              Nome não pode conter números ou caractéres especiais.
+            </small>
+          </li>
+        </ul>
+      </div>
+      <div className={ styles.birthContainer }>
+        <label htmlFor="birthDate">
+          <p>Data de Nascimento</p>
+          <input
+            type="date"
+            name="birthDate"
+            value={ form.birthDate }
+            placeholder="DD/MM/AA"
+            onChange={ handleChange }
+          />
+        </label>
+      </div>
+      <div className={ styles.mailContainer }>
+        <label htmlFor="nickname">
+          <p>Nick</p>
+          <input
+            type="text"
+            name="nickname"
+            value={ nickname }
+            placeholder="Digite seu Apelido/NickName"
+            onChange={ handleChange }
+          />
+        </label>
+        <ul>
+          <li>
+            <small className={ isValidNickLen ? styles.successColor : styles.errorColor }>
+              O Nick/Apelido deve ser entre 3 e 12 letras.
+            </small>
+          </li>
+          <li>
+            <small className={ isValidNick ? styles.successColor : styles.errorColor }>
+              O Nick/Apelido não pode ter caractéres especiais.
+            </small>
+          </li>
+        </ul>
+        <label htmlFor="email">
+          <p>Email</p>
+          <input
+            type="email"
+            name="email"
+            value={ email }
+            placeholder="Ex: email@email.com"
+            onChange={ handleChange }
+          />
+        </label>
+        <ul>
+          <li>
+            <small className={ isValidEmail ? styles.successColor : styles.errorColor }>
+              O Email deve ser válido.
+            </small>
+          </li>
+        </ul>
+        <label htmlFor="confirmEmail">
+          <p>Confime o Email</p>
+          <input
+            type="email"
+            name="confirmEmail"
+            value={ confirmEmail }
+            placeholder="Confirme seu Email"
+            onChange={ handleChange }
+          />
+        </label>
+        {
+          email !== confirmEmail && (
+            <small className={ styles.errorColor }>
+              Emails não são iguais. Verifique.
+            </small>
+          )
+        }
+        <label htmlFor="password">
+          <p>Senha</p>
+          <input
+            type="password"
+            name="password"
+            value={ password }
+            placeholder="Digite sua Senha"
+            onChange={ handleChange }
+          />
+        </label>
+        <ul>
+          <li>
+            <small
+              className={ isValidPasswordLen ? styles.successColor : styles.errorColor }
+            >
+              Senha deve ter no mínimo 8 caractéres.
+            </small>
+          </li>
+          <li>
+            <small
+              className={ isValidPassword ? styles.successColor : styles.errorColor }
+            >
+              Senha deve ter ao menos uma letra maiúscula e um caractér especial.
+            </small>
+          </li>
+        </ul>
+      </div>
       <div className={ styles.buttonsContainer }>
         <Button text="Cadastrar" type="submit" isDisabled={ isDisabled() } />
         <Button text="Limpar" type="button" onClick={ clearForm } />

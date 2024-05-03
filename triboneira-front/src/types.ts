@@ -13,7 +13,6 @@ export type NavButtonProps = {
 };
 
 export type SideCardProps = {
-  // image: string;
   streamer: string;
   stream: StreamCustonType;
 };
@@ -67,6 +66,4 @@ export type RegisterFormType = {
   password: string;
 };
 
-export type StorageValueType = {
-  value: string | number | boolean | object | Array<any>;
-};
+export type StorageValueType = string | number | boolean | object | Array<any>;
