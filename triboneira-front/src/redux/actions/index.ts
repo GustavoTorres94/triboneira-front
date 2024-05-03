@@ -7,7 +7,11 @@ import {
   GET_USERS_STREAMS_SUCCESS,
   GET_USER_STREAMS_ERROR,
   GET_USER_STREAMS_START,
+  GET_USERS_FROM_LOCALSTORAGE,
+  SET_USERS_IN_LOCALSTORAGE,
+  DELETE_USER_FROM_LOCALSTORAGE,
 } from './actionsTypes';
+import { StorageValueType } from '../../types';
 
 export const requestStart = () => ({
   type: GET_STREAMS_START,
@@ -41,6 +45,21 @@ export const requestUserStreamError = (error: any) => ({
   type: GET_USER_STREAMS_ERROR,
   isLoading: false,
   error,
+});
+
+export const setUsersInLocalStorage = (data: StorageValueType) => ({
+  type: SET_USERS_IN_LOCALSTORAGE,
+  payload: data,
+});
+
+export const requestUsersFromLocalStorage = (data: StorageValueType) => ({
+  type: GET_USERS_FROM_LOCALSTORAGE,
+  payload: data,
+});
+
+export const deleteUserFromLocalStorage = (data: StorageValueType) => ({
+  type: DELETE_USER_FROM_LOCALSTORAGE,
+  payload: data,
 });
 
 // ThunkActions

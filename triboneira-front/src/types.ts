@@ -67,3 +67,16 @@ export type RegisterFormType = {
 };
 
 export type StorageValueType = string | number | boolean | object | Array<any>;
+
+export type StorageType = {
+  key: string;
+  value: StorageValueType;
+};
+
+export type StorageErrorType = {
+  error: string;
+};
+
+export type UsersType = {
+  username: string;
+};

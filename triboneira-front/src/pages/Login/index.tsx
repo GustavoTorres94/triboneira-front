@@ -2,11 +2,12 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/jsx-max-depth */
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash, faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../components/Buttons';
-import { createLocalStorage } from '../../utils/localStorage';
+import { setUsersInLocalStorage } from '../../redux/actions';
 import styles from './Login.module.css';
 
 function Login() {
@@ -16,6 +17,7 @@ function Login() {
   });
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -28,9 +30,9 @@ function Login() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    createLocalStorage('loggedUser', login.email);
+    dispatch(setUsersInLocalStorage(login.email));
     alert('Login efetuado com sucesso');
-    navigate('/');
+    navigate('/about');
   };
 
   return (

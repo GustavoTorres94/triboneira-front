@@ -1,5 +1,7 @@
 import { StorageValueType } from '../types';
 
+export const KEY_LOCAL_STORAGE = 'loggedUser';
+
 function createLocalStorage(key: string, value: StorageValueType) {
   return localStorage.setItem(key, JSON.stringify(value));
 }

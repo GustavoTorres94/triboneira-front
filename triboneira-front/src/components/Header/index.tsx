@@ -1,7 +1,17 @@
 import { NavLink } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { getLocalStorage, KEY_LOCAL_STORAGE } from '../../utils/localStorage';
+import { deleteUserFromLocalStorage } from '../../redux/actions';
 import styles from './Header.module.css';
 
 function Header() {
+  const { username } = useSelector((state: any) => state.users);
+  const dispatch = useDispatch();
+
+  const handleLogout = () => {
+    dispatch(deleteUserFromLocalStorage(KEY_LOCAL_STORAGE));
+  };
+
   return (
     <div>
       <div className={ styles.header }>
@@ -14,13 +24,30 @@ function Header() {
           Triboneira!
         </h1>
         <p className={ styles.subtitle }>A Tribo cuida da Tribo!</p>
-        <div className={ styles.infoRegisterLogin }>
-          <p>Já possuí Cadastro?</p>
-          <div className={ styles.linkInfo }>
-            <NavLink to="/login" className={ styles.link }>Login</NavLink>
-            <NavLink to="/register" className={ styles.link }>Cadastre-se</NavLink>
-          </div>
-        </div>
+        {
+          getLocalStorage('loggedUser') ? (
+            <div className={ styles.infoRegisterLogin }>
+              <p>
+                Olá,
+                { username }
+              </p>
+              <NavLink to="/dashboard" className={ styles.link }>Dashboard</NavLink>
+              <NavLink
+                to="/login"
+                className={ styles.link }
+                onClick={ handleLogout }
+              >
+                Logout
+              </NavLink>
+            </div>) : (
+              <div className={ styles.infoRegisterLogin }>
+                <p>Já possuí Cadastro?</p>
+                <div className={ styles.linkInfo }>
+                  <NavLink to="/login" className={ styles.link }>Login</NavLink>
+                  <NavLink to="/register" className={ styles.link }>Cadastre-se</NavLink>
+                </div>
+              </div>)
+        }
       </div>
     </div>
   );
