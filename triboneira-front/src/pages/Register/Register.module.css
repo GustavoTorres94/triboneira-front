@@ -3,8 +3,47 @@
   justify-content: center;
   align-items: center;
   max-width: 1400px;
-  height: 100vh;
+  height: 700px;
   margin: 0 auto;
-  background-color: #282c34;
-  color: white;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  top: 100px;
+  width: 80%;
+  height: 80%;
+}
+
+.infoSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.formSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.list li {
+  list-style: none;
+  margin: 10px;
 }

@@ -1,8 +1,20 @@
 import { NavButtonProps } from '../../types';
 
-function Button({ text, type }: NavButtonProps) {
+function Button({ text, type, onClick, isDisabled }: NavButtonProps) {
+  const handle = () => {
+    if (onClick) {
+      onClick();
+    }
+  };
+
   return (
-    <button type={ type }>{ text }</button>
+    <button
+      type={ type }
+      onClick={ handle }
+      disabled={ isDisabled }
+    >
+      { text }
+    </button>
   );
 }
 

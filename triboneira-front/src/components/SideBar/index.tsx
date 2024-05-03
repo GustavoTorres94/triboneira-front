@@ -1,12 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import SideCard from '../SideCard';
 import styles from './SideBar.module.css';
 
 export default function SideBar() {
   const response = useSelector((state: any) => state.stream);
+  const navigate = useNavigate();
   const scrollToTop = () => {
+    if (window.scrollY === 0) {
+      navigate('/');
+    }
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
