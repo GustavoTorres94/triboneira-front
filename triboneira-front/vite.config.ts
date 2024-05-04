@@ -14,12 +14,13 @@ export default defineConfig(({ mode }) => {
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: './setupTests.ts',
+    setupFiles: './src/setupTests.ts',
     css: true,
     reporters: ['verbose'],
     coverage: {
       reporter: ['text', 'json', 'html'],
-      provider: 'v8'
+      provider: 'v8',
+      include: ['src/**/*'],
     }
   },
 }
