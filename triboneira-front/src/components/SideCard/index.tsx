@@ -48,6 +48,7 @@ function SideCard({ streamer, stream }: SideCardProps) {
               href={ `https://www.twitch.tv/${stream.streamerName}` }
               target="_blank"
               rel="noreferrer"
+              aria-label="streamer-link"
             >
               <img
                 src={ images[stream.streamerName] }

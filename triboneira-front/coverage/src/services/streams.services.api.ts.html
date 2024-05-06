@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">61.29% </span>
+                <span class="strong">83.87% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>38/62</span>
+                <span class='fraction'>52/62</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">75% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>3/4</span>
+                <span class='fraction'>6/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">61.29% </span>
+                <span class="strong">83.87% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>38/62</span>
+                <span class='fraction'>52/62</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -148,8 +148,8 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -170,23 +170,23 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// futuramente, aplicar um fetch para pegar os dados da API de teams da twitch
 const triboList: string[] = [
   'gaules',
@@ -209,9 +209,9 @@ const toSearchParam = (arr: string[]): string =&gt; {
   return arr.map((item) =&gt; `user_login=${item}`).join('&amp;');
 };
 &nbsp;
-const toSearchParamUser = <span class="fstat-no" title="function not covered" >(arr: string[]): string =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  return arr.map((item) =&gt; `login=${item}`).join('&amp;');</span>
-<span class="cstat-no" title="statement not covered" >};</span>
+const toSearchParamUser = (arr: string[]): string =&gt; {
+  return arr.map((item) =&gt; `login=${item}`).join('&amp;');
+};
 &nbsp;
 export const getStreams = async () =&gt; {
   try {
@@ -226,29 +226,29 @@ export const getStreams = async () =&gt; {
 <span class="branch-0 cbranch-no" title="branch not covered" >    );</span>
 <span class="cstat-no" title="statement not covered" >    const data = await response.json();</span>
 <span class="cstat-no" title="statement not covered" >    return data.data;</span>
-<span class="cstat-no" title="statement not covered" >  } catch (error) {</span>
-<span class="cstat-no" title="statement not covered" >    console.error(error);</span>
+<span class="cstat-no" title="statement not covered" >  } catch (error: any) {</span>
+<span class="cstat-no" title="statement not covered" >    throw new Error(error);</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
 };
 &nbsp;
-export const getUsersStreams = <span class="fstat-no" title="function not covered" >async () =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  try {</span>
-<span class="cstat-no" title="statement not covered" >    const url = `https://api.twitch.tv/helix/users?${toSearchParamUser(triboList)}`;</span>
-<span class="cstat-no" title="statement not covered" >    const response = await fetch(</span>
-<span class="cstat-no" title="statement not covered" >      url,</span>
-<span class="cstat-no" title="statement not covered" >      {</span>
-<span class="cstat-no" title="statement not covered" >        headers: {</span>
-<span class="cstat-no" title="statement not covered" >          Authorization: `Bearer ${TOKEN}`,</span>
-<span class="cstat-no" title="statement not covered" >          'Client-Id': CLIENT_ID as string,</span>
-<span class="cstat-no" title="statement not covered" >        },</span>
-<span class="cstat-no" title="statement not covered" >      },</span>
-<span class="cstat-no" title="statement not covered" >    );</span>
+export const getUsersStreams = async () =&gt; {
+  try {
+    const url = `https://api.twitch.tv/helix/users?${toSearchParamUser(triboList)}`;
+    const response = await fetch(
+      url,
+      {
+        headers: {
+          Authorization: `Bearer ${TOKEN}`,
+          'Client-Id': CLIENT_ID as string,
+        },
+      },
+<span class="branch-0 cbranch-no" title="branch not covered" >    );</span>
 <span class="cstat-no" title="statement not covered" >    const data = await response.json();</span>
 <span class="cstat-no" title="statement not covered" >    return data.data;</span>
-<span class="cstat-no" title="statement not covered" >  } catch (error) {</span>
-<span class="cstat-no" title="statement not covered" >    console.error(error);</span>
+<span class="cstat-no" title="statement not covered" >  } catch (error: any) {</span>
+<span class="cstat-no" title="statement not covered" >    throw new Error(error);</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
-<span class="cstat-no" title="statement not covered" >};</span>
+};
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -256,7 +256,7 @@ export const getUsersStreams = <span class="fstat-no" title="function not covere
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-05-04T04:24:48.253Z
+                at 2024-05-06T19:18:32.462Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">56.17% </span>
+                <span class="strong">66.29% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>50/89</span>
+                <span class='fraction'>59/89</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">80% </span>
+                <span class="strong">77.77% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>4/5</span>
+                <span class='fraction'>7/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">27.27% </span>
+                <span class="strong">45.45% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/11</span>
+                <span class='fraction'>5/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">56.17% </span>
+                <span class="strong">66.29% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>50/89</span>
+                <span class='fraction'>59/89</span>
             </div>
         
             
@@ -173,9 +173,9 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -231,16 +231,16 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Dispatch } from 'react';
 import { getStreams, getUsersStreams } from '../../services/streams.services.api';
 import {
@@ -261,10 +261,10 @@ export const requestStart = () =&gt; ({
   isLoading: true,
 });
 &nbsp;
-export const requestStreamUsersStart = <span class="fstat-no" title="function not covered" >() =&gt; ({</span>
-<span class="cstat-no" title="statement not covered" >  type: GET_USER_STREAMS_START,</span>
-<span class="cstat-no" title="statement not covered" >  isLoading: true,</span>
-<span class="cstat-no" title="statement not covered" >});</span>
+export const requestStreamUsersStart = () =&gt; ({
+  type: GET_USER_STREAMS_START,
+  isLoading: true,
+});
 &nbsp;
 export const requestSuccess = <span class="fstat-no" title="function not covered" >(data: any) =&gt; ({</span>
 <span class="cstat-no" title="statement not covered" >  type: GET_STREAMS_SUCCESS,</span>
@@ -319,17 +319,17 @@ export const getAllStreams = () =&gt; {
   };
 };
 &nbsp;
-export const getAllUsersStreams = <span class="fstat-no" title="function not covered" >() =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  return async (dispatch: Dispatch&lt;any&gt;) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    dispatch(requestStreamUsersStart());</span>
-<span class="cstat-no" title="statement not covered" >    try {</span>
-<span class="cstat-no" title="statement not covered" >      const response = await getUsersStreams();</span>
+export const getAllUsersStreams = () =&gt; {
+  return async (dispatch: Dispatch&lt;any&gt;) =&gt; {
+    dispatch(requestStreamUsersStart());
+    try {
+      const response = await getUsersStreams(<span class="branch-0 cbranch-no" title="branch not covered" >);</span>
 <span class="cstat-no" title="statement not covered" >      dispatch(requestUsersStreamsSuccess(response));</span>
 <span class="cstat-no" title="statement not covered" >    } catch (error) {</span>
 <span class="cstat-no" title="statement not covered" >      dispatch(requestUserStreamError(error));</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-<span class="cstat-no" title="statement not covered" >  };</span>
-<span class="cstat-no" title="statement not covered" >};</span>
+  };
+};
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -337,7 +337,7 @@ export const getAllUsersStreams = <span class="fstat-no" title="function not cov
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-05-04T04:24:48.253Z
+                at 2024-05-06T19:18:32.462Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

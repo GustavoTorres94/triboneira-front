@@ -1,0 +1,170 @@
+import { StreamCustonType } from '../../src/types';
+
+const cs = 'Counter-Strike';
+
+export const streamersMock = [
+  {
+    id: '42579686793',
+    user_id: '181077473',
+    user_login: 'gaules',
+    user_name: 'Gaules',
+    game_id: '32399',
+    game_name: cs,
+    type: 'live',
+    title:
+      'FURIA é BRASIL na ESL Pro League S19 -  !Sorteio - Siga Gaules nas redes sociais!',
+    viewer_count: 7888,
+    started_at: '2024-05-04T11:14:34Z',
+    language: 'pt',
+    thumbnail_url:
+      'https://static-cdn.jtvnw.net/previews-ttv/live_user_gaules-{width}x{height}.jpg',
+    tag_ids: [],
+    tags: [
+      'Português', 'brazil', 'Portugues', 'cs', 'CS2', 'counterstrike', 'Brasil',
+    ],
+    is_mature: true,
+  },
+  {
+    id: '42579609033',
+    user_id: '112618532',
+    user_login: 'ale_apoka',
+    user_name: 'ale_apoka',
+    game_id: '518203',
+    game_name: 'Sports',
+    type: 'live',
+    title:
+      'AO VIVO: UFC Rio com IMAGENS VEM !rivalry !keydrop - Me siga @ale_apoka na Redes',
+    viewer_count: 7149,
+    started_at: '2024-05-04T09:35:25Z',
+    language: 'pt',
+    thumbnail_url:
+      'https://static-cdn.jtvnw.net/previews-ttv/live_user_ale_apoka-{width}x{height}.jpg',
+    tag_ids: [],
+    tags: ['tribo', 'Português'],
+    is_mature: true,
+  },
+  {
+    id: '42579709417',
+    user_id: '77573531',
+    user_login: 'liminhag0d',
+    user_name: 'liminhag0d',
+    game_id: '27471',
+    game_name: 'Minecraft',
+    type: 'live',
+    title: 'Minecfaft da TRIBO rEPRISE !rivalry !gcsolo  !livepix !farmskins',
+    viewer_count: 628,
+    started_at: '2024-05-04T11:36:33Z',
+    language: 'pt',
+    thumbnail_url:
+      'https://static-cdn.jtvnw.net/previews-ttv/live_user_liminhag0d-{width}x{height}.jpg',
+    tag_ids: [],
+    tags: ['Português'],
+    is_mature: true,
+  },
+  {
+    id: '51010689933',
+    user_id: '22336099',
+    user_login: 'bt0tv',
+    user_name: 'bt0tv',
+    game_id: '32399',
+    game_name: cs,
+    type: 'live',
+    title:
+      'TUDO O QUE ROLOU NA BALADA @ GAMERSCLUB // !rivalry !farmskins !bleik !sorteio',
+    viewer_count: 111,
+    started_at: '2024-05-03T16:24:12Z',
+    language: 'pt',
+    thumbnail_url:
+      'https://static-cdn.jtvnw.net/previews-ttv/live_user_bt0tv-{width}x{height}.jpg',
+    tag_ids: [],
+    tags: ['Português'],
+    is_mature: false,
+  },
+  {
+    id: '44143829051',
+    user_id: '75891532',
+    user_login: 'michel',
+    user_name: 'Michel',
+    game_id: '516575',
+    game_name: 'VALORANT',
+    type: 'live',
+    title: 'LIVE: Leviatan vs KRU - Seja SUB para o !SORTEIO na SEGUNDA',
+    viewer_count: 105,
+    started_at: '2024-05-04T22:52:45Z',
+    language: 'pt',
+    thumbnail_url:
+      'https://static-cdn.jtvnw.net/previews-ttv/live_user_michel-{width}x{height}.jpg',
+    tag_ids: [],
+    tags: [
+      'Português', 'Imperial', 'FURIA', 'LOUD', 'Tribo', 'CSGO', 'MIBR', 'Fluxo',
+      'paiN', 'VALORANT',
+    ],
+    is_mature: false,
+  },
+  {
+    id: '42578631129',
+    user_id: '89321667',
+    user_login: 'llauqstv',
+    user_name: 'LLauqSTV',
+    game_id: '31339',
+    game_name: 'Project Zomboid',
+    type: 'live',
+    title: 'Desdobramentos da base, o 1º dia e o anacronismo - RERUN - EN/PT',
+    viewer_count: 87,
+    started_at: '2024-05-04T01:10:01Z',
+    language: 'pt',
+    thumbnail_url:
+      'https://static-cdn.jtvnw.net/previews-ttv/live_user_llauqstv-{width}x{height}.jpg',
+    tag_ids: [],
+    tags: [
+      'zomboid', 'survival', 'NBA', 'F1', 'tribo', 'CSGO', 'project', 'zombies',
+      'Português', 'lethalcompany',
+    ],
+    is_mature: true,
+  },
+];
+
+export const streamerFilteredMock = [
+  {
+    streamerName: 'gaules',
+    game: cs,
+    title: 'FURIA é BRASIL na ESL Pro League S19 -  !Sorteio - Siga Gaules!',
+    viewers: 7888,
+    type: 'live',
+  },
+  {
+    streamerName: 'ale_apoka',
+    game: 'Sports',
+    title: 'AO VIVO: UFC Rio com IMAGENS VEM !rivalry !keydrop - Me siga @ale_apoka',
+    viewers: 7149,
+    type: 'live',
+  },
+  {
+    streamerName: 'liminhag0d',
+    game: 'Minecraft',
+    title: 'Minecfaft da TRIBO rEPRISE !rivalry !gcsolo  !livepix !farmskins',
+    viewers: 628,
+    type: 'live',
+  },
+  {
+    streamerName: 'bt0tv',
+    game: cs,
+    title: 'TUDO O QUE ROLOU NA BALADA @ GAMERSCLUB // !rivalry !farmskins',
+    viewers: 111,
+    type: 'live',
+  },
+  {
+    streamerName: 'michel',
+    game: 'VALORANT',
+    title: 'LIVE: Leviatan vs KRU - Seja SUB para o !SORTEIO na SEGUNDA',
+    viewers: 105,
+    type: 'live',
+  },
+  {
+    streamerName: 'llauqstv',
+    game: 'Project Zomboid',
+    title: 'Desdobramentos da base, o 1º dia e o anacronismo - RERUN - EN/PT',
+    viewers: 87,
+    type: 'live',
+  },
+];

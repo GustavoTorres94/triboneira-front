@@ -21,7 +21,11 @@ export default function SideBar() {
   return (
     <div className={ styles.sideBarContainer }>
       <div className={ styles.sideBarHead }>
-        <FontAwesomeIcon icon={ faHouse } onClick={ scrollToTop } />
+        <FontAwesomeIcon
+          icon={ faHouse }
+          onClick={ scrollToTop }
+          aria-label="home-icon"
+        />
         <a href="https://www.twitch.tv" target="_blank" rel="noreferrer">
           <img src="src/assets/twitch.svg" alt="Twitch Logo in SVG format" width="40px" />
         </a>
