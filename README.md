@@ -26,7 +26,7 @@
 
 ### Como Usar
 
-<p><a href="https://triboneira-front-production.up.railway.app/register" target="_blank"> LINK DO DEPLOY </a></p>
+<p><a href="https://triboneira-front-production.up.railway.app/" target="_blank"> LINK DO DEPLOY </a></p>
     
 <p>
   <ol>
