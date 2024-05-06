@@ -37,8 +37,8 @@ export const getStreams = async () => {
     );
     const data = await response.json();
     return data.data;
-  } catch (error) {
-    console.error(error);
+  } catch (error: any) {
+    throw new Error(error);
   }
 };
 
@@ -56,7 +56,7 @@ export const getUsersStreams = async () => {
     );
     const data = await response.json();
     return data.data;
-  } catch (error) {
-    console.error(error);
+  } catch (error: any) {
+    throw new Error(error);
   }
 };
