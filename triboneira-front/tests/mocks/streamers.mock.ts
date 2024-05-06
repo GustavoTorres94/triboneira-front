@@ -1,5 +1,3 @@
-import { StreamCustonType } from '../../src/types';
-
 const cs = 'Counter-Strike';
 
 export const streamersMock = [

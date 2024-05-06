@@ -1,16 +1,10 @@
 import { Provider } from 'react-redux';
-import { legacy_createStore as createStore, applyMiddleware } from 'redux';
 import { beforeEach, vi, afterEach } from 'vitest';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { composeWithDevTools } from '@redux-devtools/extension';
 import userEvent from '@testing-library/user-event';
-import { getByText, screen, waitFor } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import { renderWithRouter } from '../../utils';
-import { getAllStreams } from '../../../src/redux/actions';
-import { userStreamsMock } from '../../mocks/usersStreams.mock';
-import { streamersMock } from '../../mocks/streamers.mock';
-import rootReducer from '../../../src/redux/reducers';
 import SideBar from '../../../src/components/SideBar';
 
 const middlewares = [thunk];

@@ -1,7 +1,5 @@
 import { Provider } from 'react-redux';
 import { vi, afterEach } from 'vitest';
-import userEvent from '@testing-library/user-event';
-import { getAllByRole } from '@testing-library/react';
 import store from '../../../src/redux';
 import { renderWithRouter } from '../../utils';
 import Register from '../../../src/pages/Register';

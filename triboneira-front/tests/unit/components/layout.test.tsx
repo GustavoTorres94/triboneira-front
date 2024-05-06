@@ -1,5 +1,5 @@
 import { Provider } from 'react-redux';
-import { beforeEach, vi } from 'vitest';
+import { beforeEach } from 'vitest';
 import { screen } from '@testing-library/react';
 import store from '../../../src/redux';
 import { renderWithRouter } from '../../utils';

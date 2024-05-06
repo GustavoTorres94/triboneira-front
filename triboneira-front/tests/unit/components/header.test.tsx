@@ -1,7 +1,6 @@
 import { Provider } from 'react-redux';
-import { beforeEach, vi } from 'vitest';
-import userEvent from '@testing-library/user-event';
-import { getByText, screen, waitFor } from '@testing-library/react';
+import { beforeEach } from 'vitest';
+import { screen } from '@testing-library/react';
 import store from '../../../src/redux';
 import { renderWithRouter } from '../../utils';
 import Header from '../../../src/components/Header';
