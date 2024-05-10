@@ -80,3 +80,12 @@ export type StorageErrorType = {
 export type UsersType = {
   username: string;
 };
+
+export type NewsSliderType = {
+  id: number;
+  image: string;
+  category: string;
+  releaseTime: string;
+  description: string;
+  title: string;
+};
