@@ -80,3 +80,41 @@ export type StorageErrorType = {
 export type UsersType = {
   username: string;
 };
+
+export type NewsSliderType = {
+  id: number;
+  image: string;
+  category: string;
+  releaseTime: string;
+  description: string;
+  title: string;
+};
+
+export type RankingType = {
+  id: number;
+  position: number;
+  teamLogo: string;
+  teamName: string;
+};
+
+export type RankingTableProps = {
+  title: string;
+  ranking: RankingType[];
+};
+
+export type NewsSumaryType = {
+  id: number;
+  title: string;
+  realeaseTime: string;
+  category: string;
+};
+
+export type NewsSumaryProps = {
+  news: NewsSumaryType[];
+};
+
+export type AdBannerProps = {
+  text: string;
+  imageArr: string[];
+  linkTo: string;
+};

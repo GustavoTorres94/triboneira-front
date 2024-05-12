@@ -1,0 +1,33 @@
+.carouselContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.infoDisplay {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slidePosition img {
+  max-width: 800px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carouselConfig {
+  border-radius: 15px;
+  max-width: 950px;
+  filter: grayscale(0.5);
+}
+
+.heading {
+  overflow: hidden;
+}
+
+.description {
+  overflow: hidden;
+}
