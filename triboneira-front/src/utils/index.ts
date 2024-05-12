@@ -6,6 +6,7 @@ import newsArray from './newsArr';
 import comunityRanking from './comunityRanking';
 import powerRanking from './powerRanking';
 import news from './newsSumaryArr';
+import { nikeArrImg, kabumArrImg } from './imgArrAd';
 
 export {
   verifyEmail,
@@ -18,4 +19,6 @@ export {
   comunityRanking,
   powerRanking,
   news,
+  nikeArrImg,
+  kabumArrImg,
 };

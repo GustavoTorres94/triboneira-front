@@ -5,20 +5,38 @@ import { AppDispatch } from '../../types';
 import RankingTable from '../../components/RankingTable';
 import ControlledCarousel from '../../components/Carousel';
 import NewsSumary from '../../components/NewsSumary';
-import { newsArray, powerRanking, comunityRanking, news } from '../../utils';
+import AdBanner from '../../components/AdBanner';
+import {
+  newsArray,
+  powerRanking,
+  comunityRanking,
+  news,
+  nikeArrImg,
+  kabumArrImg,
+} from '../../utils';
 import styles from './Home.module.css';
 
 function Home() {
   const dispatch = useDispatch<AppDispatch>();
 
-  // useEffect(() => {
-  //   dispatch(getAllStreams());
-  // }, [dispatch]);
+  useEffect(() => {
+    dispatch(getAllStreams());
+  }, [dispatch]);
 
   return (
     <div className={ styles.homeContainer }>
       <div className={ styles.newsContainer }>
+        <AdBanner
+          text="Tribo Nike"
+          imageArr={ nikeArrImg }
+          linkTo="https://www.nike.com.br/sc/tribo"
+        />
         <ControlledCarousel newsArr={ newsArray } />
+        <AdBanner
+          text="Tribo Kabum"
+          imageArr={ kabumArrImg }
+          linkTo="https://www.kabum.com.br/hotsite/gaules/"
+        />
       </div>
       <div className={ styles.rankingContainer }>
         <div className={ styles.tableSide }>

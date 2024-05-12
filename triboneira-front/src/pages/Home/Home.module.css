@@ -3,18 +3,18 @@
   flex-direction: column;
   max-width: 1400px;
   margin: 0 auto;
-  border-left: rgb(117, 137, 247) solid 1px;
-  border-right: rgb(117, 137, 247) groove 1px;
+
 }
 
 .newsContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   margin: 0 auto;
   height: 550px;
   overflow-y: auto;
+  /* background-color: red; */
 }
 
 .rankingContainer {
@@ -62,5 +62,4 @@
   width: 50%;
   margin: 0 auto;
   height: 550px;
-  /* background-color: yellow; */
 }

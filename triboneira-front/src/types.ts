@@ -112,3 +112,9 @@ export type NewsSumaryType = {
 export type NewsSumaryProps = {
   news: NewsSumaryType[];
 };
+
+export type AdBannerProps = {
+  text: string;
+  imageArr: string[];
+  linkTo: string;
+};
