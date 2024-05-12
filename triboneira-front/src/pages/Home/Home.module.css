@@ -1,8 +1,7 @@
 .homeContainer {
   display: flex;
-  /* justify-content: center; */
+  flex-direction: column;
   max-width: 1400px;
-  height: 100vh;
   margin: 0 auto;
   border-left: rgb(117, 137, 247) solid 1px;
   border-right: rgb(117, 137, 247) groove 1px;
@@ -15,4 +14,53 @@
   width: 100%;
   margin: 0 auto;
   height: 550px;
+  overflow-y: auto;
+}
+
+.rankingContainer {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  height: 550px;
+}
+
+.tableSide {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: start;
+  width: 50%;
+  margin: 0 auto;
+  height: 710px;
+}
+
+.powerRanking {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  height: 650px;
+}
+
+.comunityRanking {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  height: 650px;
+}
+
+.oldernewsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  height: 550px;
+  /* background-color: yellow; */
 }

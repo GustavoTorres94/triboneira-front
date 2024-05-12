@@ -89,3 +89,26 @@ export type NewsSliderType = {
   description: string;
   title: string;
 };
+
+export type RankingType = {
+  id: number;
+  position: number;
+  teamLogo: string;
+  teamName: string;
+};
+
+export type RankingTableProps = {
+  title: string;
+  ranking: RankingType[];
+};
+
+export type NewsSumaryType = {
+  id: number;
+  title: string;
+  realeaseTime: string;
+  category: string;
+};
+
+export type NewsSumaryProps = {
+  news: NewsSumaryType[];
+};

@@ -13,7 +13,7 @@ const newsArray: NewsSliderType[] = [
   {
     id: 2,
     title: 'Como Fica? Com anúncio da G3X na Kings League confira como deve ficar a próxima temporada da equipa no Turismo Nacional',
-    description: 'Poragrama semanal sobre CS2, com a participação de grandes nomes do cenário!',
+    description: 'O nosso piloto secundário virou o novo técnico da equipa de fut7!',
     category: 'Tribo',
     releaseTime: '2024-05-08',
     image: 'https://admin.presskit.com.br/anexos_checkurl.jpg?fd=0&tipoimg=web&newsid=428712&anexoid=1078878&usuid=&usu=&chk=1&url=https://assets.gamearena.gg/wp-content/uploads/2024/01/10100051/tribo-gaules.jpg',
