@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { faTwitch } from '@fortawesome/free-brands-svg-icons';
 import SideCard from '../SideCard';
 import styles from './SideBar.module.css';
 
@@ -27,7 +29,7 @@ export default function SideBar() {
           aria-label="home-icon"
         />
         <a href="https://www.twitch.tv" target="_blank" rel="noreferrer">
-          <img src="src/assets/twitch.svg" alt="Twitch Logo in SVG format" width="40px" />
+          <FontAwesomeIcon icon={ faTwitch } />
         </a>
       </div>
       <div className={ styles.sideBarBody }>

@@ -3,7 +3,6 @@
   flex-direction: column;
   max-width: 1400px;
   margin: 0 auto;
-
 }
 
 .newsContainer {
@@ -14,14 +13,13 @@
   margin: 0 auto;
   height: 550px;
   overflow-y: auto;
-  /* background-color: red; */
 }
 
 .rankingContainer {
   display: flex;
   width: 100%;
   margin: 0 auto;
-  height: 550px;
+  height: auto;
 }
 
 .tableSide {
@@ -41,7 +39,7 @@
   align-items: center;
   width: 50%;
   margin: 0 auto;
-  height: 650px;
+  height: auto;
 }
 
 .comunityRanking {
@@ -51,7 +49,7 @@
   align-items: center;
   width: 50%;
   margin: 0 auto;
-  height: 650px;
+  height: auto;
 }
 
 .oldernewsContainer {
@@ -61,5 +59,5 @@
   align-items: center;
   width: 50%;
   margin: 0 auto;
-  height: 550px;
+  height: auto;
 }

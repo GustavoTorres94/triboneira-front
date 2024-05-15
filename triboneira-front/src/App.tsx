@@ -1,12 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import { Home, About, Contact, Login, Register, NotFound } from './pages';
+import styles from './App.module.css';
 
 function App() {
-  document.body.style.backgroundColor = '#f5f5f5';
-
   return (
-    <div>
+    <div className={ styles.app }>
       <Routes>
         <Route element={ <Layout /> }>
           <Route path="/" element={ <Home /> } />
