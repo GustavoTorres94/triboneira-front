@@ -4,13 +4,13 @@ import { Home } from '../../../src/pages';
 import { renderWithRouter } from '../../utils';
 
 describe('Testes da Home Page', () => {
-  it('Testa se a Home Page está renderizando, com provider', () => {
+  it.only('Testa se a Home Page está renderizando, com provider', () => {
     const { getByText } = renderWithRouter(
       <Provider store={ store }>
         <Home />
       </Provider>,
     );
-    const text = getByText('Home');
+    const text = getByText(/apokão/i);
     expect(text).toBeInTheDocument();
   });
 });

@@ -21,7 +21,7 @@ const newsArray: NewsSliderType[] = [
   {
     id: 3,
     title: 'Mesmo sem direitos de transmissão, Tribo é a maior audiência da Twitch! Confira!',
-    description: 'Transmissões tiveram média de 70 mil espectares, mesmo com delay',
+    description: 'Transmissões tiveram média de 70 mil espectadores, mesmo com delay',
     category: 'Counter-Strike 2',
     releaseTime: '2024-03-08',
     image: 'https://assets.gamearena.gg/wp-content/uploads/2024/01/10100051/tribo-gaules.jpg',

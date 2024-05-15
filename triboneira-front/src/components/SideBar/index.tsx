@@ -29,7 +29,7 @@ export default function SideBar() {
           aria-label="home-icon"
         />
         <a href="https://www.twitch.tv" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={ faTwitch } />
+          <FontAwesomeIcon icon={ faTwitch } aria-label="Twitch-Logo" />
         </a>
       </div>
       <div className={ styles.sideBarBody }>
