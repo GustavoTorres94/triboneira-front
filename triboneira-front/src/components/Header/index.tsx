@@ -17,7 +17,7 @@ function Header() {
       <div className={ styles.header }>
         <img
           className={ styles.header__logo }
-          src="./src/assets/logo__tribo.png"
+          src="https://static-cdn.jtvnw.net/jtv_user_pictures/ea0fe422-84bd-4aee-9d10-fd4b0b3a7054-profile_image-150x150.png"
           alt="Logo da Tribo Gaulesa"
         />
         <h1>
@@ -54,3 +54,4 @@ function Header() {
 }
 
 export default Header;
+// https://static-cdn.jtvnw.net/jtv_user_pictures/ea0fe422-84bd-4aee-9d10-fd4b0b3a7054-profile_image-150x150.png

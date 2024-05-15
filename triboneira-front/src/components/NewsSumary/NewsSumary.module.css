@@ -8,7 +8,6 @@
   margin: 0 auto;
   overflow: hidden;
   height: 550px;
-  /* background-color: aqua; */
   overflow-y: auto;
 }
 
@@ -17,8 +16,7 @@
   width: 80%;
   height: 100px;
   margin: 0 auto;
-  /* background-color: yellow; */
-  /* border: 1px solid black; */
+
   margin-bottom: 20px;
   border-radius: 10px;
 }
@@ -30,7 +28,6 @@
   padding: 15px;
   width: 20%;
   height: 100%;
-  /* background-color: red; */
   color: var(--primary-color);
 }
 
@@ -41,7 +38,6 @@
   width: 80%;
   height: 100%;
   border-left: 2px solid var(--primary-color);
-  /* background-color: green; */
   padding-left: 35px;
   text-overflow: ellipsis;
   overflow: hidden;

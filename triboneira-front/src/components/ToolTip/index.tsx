@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { ToolTipProps } from '../../types';
 import styles from './ToolTip.module.css';
 
@@ -24,7 +26,7 @@ function ToolTipComponet({
         <p>
           {type}
         </p>
-        <img src="src/assets/user-solid.svg" alt="user-solid-fontawesome" />
+        <FontAwesomeIcon icon={ faUser } />
         <p>{`${viewerCount} viewers`}</p>
       </div>
     </div>

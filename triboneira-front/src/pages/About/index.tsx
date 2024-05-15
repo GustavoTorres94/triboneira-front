@@ -1,5 +1,3 @@
-import ControlledCarousel from '../../components/Carousel';
-
 import styles from './About.module.css';
 
 function About() {

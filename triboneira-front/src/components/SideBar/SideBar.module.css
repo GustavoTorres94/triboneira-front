@@ -27,6 +27,11 @@
   height: 150px;
 }
 
+.sideBarHead svg {
+  height: 35px;
+  color: black;
+}
+
 .sideBarBody {
   display: flex;
   flex-direction: column;
