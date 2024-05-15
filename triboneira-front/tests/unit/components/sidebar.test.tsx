@@ -27,13 +27,15 @@ describe('Testando o componente SideBar', () => {
     vi.clearAllMocks();
   });
 
-  it('Deve renderizar o componente SideBar', () => {
+  it('Deve renderizar o componente SideBar', async () => {
     renderWithRouter(
       <Provider store={ store }>
         <SideBar />
       </Provider>,
     );
-    expect(screen.getByAltText('Twitch Logo in SVG format')).toBeInTheDocument();
+    const twitchLink = screen.getByLabelText('Twitch-Logo');
+    console.log(twitchLink);
+    expect(twitchLink).toBeInTheDocument();
   });
 
   it('Testa se ao clicar no Home button o compoenente é renderizado', async () => {
@@ -44,7 +46,7 @@ describe('Testando o componente SideBar', () => {
     );
     const homeButton = screen.getByLabelText('home-icon');
     await userEvent.click(homeButton);
-    expect(screen.getByAltText('Twitch Logo in SVG format')).toBeInTheDocument();
+    expect(screen.getByLabelText('Twitch-Logo')).toBeInTheDocument();
   });
 
   // it('Teste se o state do Redux traz as informações corretas e renderiza o SideCard', async () => {
