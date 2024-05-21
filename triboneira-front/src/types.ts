@@ -118,3 +118,13 @@ export type AdBannerProps = {
   imageArr: string[];
   linkTo: string;
 };
+
+export type CustonUserStreamerTypes = {
+  id: string;
+  display_name: string;
+  profile_image_url: string;
+};
+
+export type StreamerCardProps = {
+  streamer: CustonUserStreamerTypes[];
+};

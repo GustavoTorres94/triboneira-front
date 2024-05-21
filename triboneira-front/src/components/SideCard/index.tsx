@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { getAllUsersStreams } from '../../redux/actions';
 import { SideCardProps, UserStreamType, AppDispatch } from '../../types';
 import ToolTipComponet from '../ToolTip';
-
 import styles from './SideCard.module.css';
 
 function SideCard({ streamer, stream }: SideCardProps) {

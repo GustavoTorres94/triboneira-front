@@ -1,10 +1,163 @@
 .aboutContainer {
   display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: 0 auto;
+  /* background-color: #282c34; */
+  color: white;
+}
+
+.cardContainer {
+  display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1400px;
-  height: 100vh;
-  margin: 0 auto;
-  background-color: #282c34;
-  color: white;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.imgSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+}
+
+.imgSide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.textSide {
+  display: flex;
+  flex-direction: column;
+  margin-left: 45px;
+  height: 100%;
+  width: 60%;
+  color: black;
+}
+
+.mvvContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 80%;
+}
+
+.mvvContainer h3 {
+  font-weight: 200;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.mission {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+  border-bottom: 2px solid rgb(49, 200, 247);
+}
+
+.mission h3 {
+  color: red;
+} 
+.vision {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+  border-bottom: 2px solid #008080;
+}
+
+.vision h3 {
+  color: yellowgreen;
+}
+
+.values {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.values h3 {
+  color: blue;
+}
+
+.textingBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 20%;
+  height: 100%;
+}
+
+.contentBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  padding: 10px;
+  width: 80%;
+  color: black;
+}
+
+.contentBox li {
+  margin: 10px;
+  list-style-type: none;
+}
+
+.partnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1400px;
+  background-color: rgb(130, 174, 185);
+  color: black;
+}
+
+.partnersLayout {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+  /* background-color: yellow; */
+}
+
+.heineken {
+  width: 130px;
+}
+
+.itau {
+  width: 100px;
 }

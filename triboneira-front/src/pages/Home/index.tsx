@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { getAllStreams } from '../../redux/actions';
+import { getAllStreams, getAllUsersStreams } from '../../redux/actions';
 import { AppDispatch } from '../../types';
 import RankingTable from '../../components/RankingTable';
 import ControlledCarousel from '../../components/Carousel';
@@ -21,7 +21,7 @@ function Home() {
 
   useEffect(() => {
     dispatch(getAllStreams());
-  }, [dispatch]);
+  }, []);
 
   return (
     <div className={ styles.homeContainer }>
