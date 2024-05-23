@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 520px;
+}
+
+.card img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.socials svg {
+  height: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+}
+
+.socials svg:hover {
+  transform: scale(1.1);
+}
+
+.socials a {
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.instagram {
+  color: #e1306c;
+}
+
+.facebook {
+  color: #1877f2;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.youtube {
+  color: #ff0000;
+}
+
+.twitch {
+  color: #6441a5;
+}
+
+.tiktok {
+  color: #000000;
+}

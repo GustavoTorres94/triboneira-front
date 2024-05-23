@@ -5,7 +5,6 @@
   flex-direction: column;
   max-width: 1400px;
   margin: 0 auto;
-  /* background-color: #282c34; */
   color: white;
 }
 
@@ -151,7 +150,6 @@
   margin-top: 10px;
   margin-bottom: 25px;
   width: 100%;
-  /* background-color: yellow; */
 }
 
 .heineken {
@@ -160,4 +158,24 @@
 
 .itau {
   width: 100px;
+}
+
+.documentary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.textContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 69%;
+  color: black;
 }

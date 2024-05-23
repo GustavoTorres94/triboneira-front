@@ -128,3 +128,26 @@ export type CustonUserStreamerTypes = {
 export type StreamerCardProps = {
   streamer: CustonUserStreamerTypes[];
 };
+
+export type InfoCardProps = {
+  img: string;
+  name: string;
+  nickname: string;
+  birthDate: string;
+  twitch?: string;
+  youtube?: string;
+  twitter?: string;
+  facebook?: string;
+  instagram?: string;
+  tiktok?: string;
+};
+
+export type GenericAboutProps = {
+  name: string;
+  birthDate: string;
+  facebook?: string;
+  instagram?: string;
+  twitch?: string;
+  twitter?: string;
+  youtube?: string;
+};

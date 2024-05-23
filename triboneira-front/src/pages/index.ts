@@ -4,6 +4,7 @@ import Contact from './Contact';
 import Login from './Login';
 import Register from './Register';
 import NotFound from './NotFound';
+import GenericAbout from './GenericAbout';
 
 export {
   Home,
@@ -12,4 +13,5 @@ export {
   Login,
   Register,
   NotFound,
+  GenericAbout,
 };

@@ -101,6 +101,25 @@ function About() {
           </div>
         </div>
       </div>
+      <div className={ styles.documentary }>
+        <img src="https://cdn.ome.lt/k2MdGRaS4E7tdU2qJ9U73nXHHo8=/970x360/smart/uploads/conteudo/fotos/gaules-documentario-tribo-ccxp23_z1wNwrZ.png" alt="A tribo, documentário" />
+        <div className={ styles.textContent }>
+          <p>
+            E quando sai o filme contando tudo isso? Já saiu. O documentário já está disponível
+            <a
+              href="https://www.youtube.com/watch?v=0YI-e1U0BG8&ab_channel=Gaules"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p>Neste Link.</p>
+            </a>
+            Documentário produzido pela equipe de Alexandre Borba e que conta como o sonho de realizar um evento de Counter-Strike
+            em território nacional se tornou realidade. Com depoimentos de integrantes e personalidades da tribo e da participação dos
+            principais nomes do cenário nacional de CS. O documentário é uma verdadeira viagem no tempo e um registro histórico do que
+            foi a Tribo e o que ela representa para o cenário de eSports.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

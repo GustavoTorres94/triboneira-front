@@ -1,10 +1,9 @@
 import { Tooltip } from '@mui/material';
-import { useParams, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { StreamerCardProps } from '../../types';
 import styles from './StreamerCard.module.css';
 
 function StreamerCard({ streamer }: StreamerCardProps) {
-  const { id } = useParams<{ id: string }>();
   return (
     <div className={ styles.container }>
       {
@@ -13,7 +12,7 @@ function StreamerCard({ streamer }: StreamerCardProps) {
             <Tooltip title={ s.display_name } arrow>
               <Link
                 to={
-                id === s.id ? `/about/${s.id} ` : '/about'
+                  `/about/${s.display_name} `
                }
               >
                 <img src={ s.profile_image_url } alt={ ` ${s.display_name} logo ` } />
