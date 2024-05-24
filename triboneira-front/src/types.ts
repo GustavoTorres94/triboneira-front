@@ -51,6 +51,7 @@ export type UserStreamType = {
   login: string;
   display_name: string;
   profile_image_url: string;
+  description?: string;
 };
 
 export type UserReturnType = {

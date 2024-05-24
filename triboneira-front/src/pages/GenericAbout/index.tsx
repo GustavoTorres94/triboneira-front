@@ -12,7 +12,7 @@ function GenericAbout() {
   const filteredData = data
     .filter((streamer: any) => streamer.display_name !== streamName);
 
-  const [{ display_name }] = data
+  const [{ display_name, description }] = data
     .filter((streamer: any) => streamer.display_name === streamName);
 
   const restOfCardInfo = infoData.map((info) => info[display_name]);
@@ -25,6 +25,7 @@ function GenericAbout() {
     youtube,
     tiktok,
     profileImg,
+    history,
   } = restOfCardInfo[0];
 
   return (
@@ -45,6 +46,14 @@ function GenericAbout() {
           youtube={ youtube }
           tiktok={ tiktok }
         />
+        <div className={ styles.textContainer }>
+          <div className={ styles.intro }>
+            <p>{description}</p>
+          </div>
+          <div className={ styles.aboutStreamer }>
+            <p>{history}</p>
+          </div>
+        </div>
       </div>
     </div>
   );

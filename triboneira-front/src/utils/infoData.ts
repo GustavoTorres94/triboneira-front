@@ -1,3 +1,20 @@
+/* eslint-disable max-len */
+const lorisIpsum1000 = `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`;
+
 const infoData = [
   {
     Gaules: {
@@ -10,6 +27,7 @@ const infoData = [
       youtube: 'https://www.youtube.com/@Gaules',
       tiktok: 'https://www.tiktok.com/@gaules',
       profileImg: 'https://f.i.uol.com.br/fotografia/2022/08/19/166092528062ffb56088166_1660925280_3x2_md.jpg',
+      history: lorisIpsum1000,
     },
     liminhag0d: {
       name: 'André Kenzo',
@@ -20,6 +38,7 @@ const infoData = [
       youtube: 'https://www.youtube.com/@liminhag0d902',
       tiktok: 'https://www.tiktok.com/@andrekenzo11',
       profileImg: 'https://i.redd.it/dlff49l56pn61.png',
+      history: lorisIpsum1000,
     },
     velhovamp: {
       name: 'Victor Taube',
@@ -30,6 +49,7 @@ const infoData = [
       youtube: 'https://www.youtube.com/@velhovamp',
       tiktok: 'https://www.tiktok.com/@velhovampvvv',
       profileImg: 'https://gametimes.com.br/wp-content/uploads/2022/06/velhov.jpg',
+      history: lorisIpsum1000,
     },
     boltz: {
       name: 'Ricardo Prass',
@@ -40,6 +60,7 @@ const infoData = [
       twitter: 'https://twitter.com/boltz',
       youtube: 'https://www.youtube.com/@boltz',
       profileImg: 'https://www.pichauarena.com.br/wp-content/uploads/2023/06/Boltalha.webp',
+      history: lorisIpsum1000,
     },
     Michel: {
       name: 'Michel',
@@ -50,6 +71,7 @@ const infoData = [
       twitter: 'https://x.com/mch_AGG',
       youtube: 'https://www.youtube.com/c/MCH_agg',
       profileImg: 'https://steamuserimages-a.akamaihd.net/ugc/1834649584798941428/D4F100BFC92D170252FE1358A2C03D3D1FCAAFE4/',
+      history: lorisIpsum1000,
     },
     bt0tv: {
       name: 'Filipe Moreno',
@@ -61,6 +83,7 @@ const infoData = [
       youtube: 'https://www.youtube.com/@bt0tv',
       tiktok: 'https://www.tiktok.com/@fillipebt',
       profileImg: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa8E6prBSCcnML-z9l7qce6Cd9rXfEbNdrNmhhw_6BBA&s',
+      history: lorisIpsum1000,
     },
     ale_apoka: {
       name: 'Alessandro Marcucci',
@@ -72,6 +95,7 @@ const infoData = [
       youtube: 'https://www.youtube.com/@AleAPOKA',
       tiktok: 'https://www.tiktok.com/@ale_apoka',
       profileImg: 'https://assets.gamearena.gg/wp-content/uploads/2022/01/30014737/CSGO-A-aposentadoria-de-Alessandro-Apoka-treinador-da-MiBR.jpg',
+      history: lorisIpsum1000,
     },
     LLauqSTV: {
       name: 'Diego Sanches',
@@ -83,6 +107,7 @@ const infoData = [
       youtube: 'https://www.youtube.com/@llauqstv',
       tiktok: 'https://www.tiktok.com/@llauqstv',
       profileImg: 'https://pbs.twimg.com/profile_images/1336138822644609024/888g_Qd__400x400.jpg',
+      history: lorisIpsum1000,
     },
     gaulestv: {
       name: 'NapaZika e Amarelo',
@@ -93,6 +118,7 @@ const infoData = [
       youtube: 'https://www.youtube.com/@Gaules',
       tiktok: 'https://www.tiktok.com/@gaules',
       profileImg: 'https://static-cdn.jtvnw.net/jtv_user_pictures/124660fa-4f98-4759-9ec5-131eabbb8528-profile_image-70x70.png',
+      history: lorisIpsum1000,
     },
     RNakano: {
       name: 'Renato Nakano',
@@ -104,6 +130,7 @@ const infoData = [
       youtube: 'https://www.youtube.com/@nakfps',
       tiktok: 'https://www.tiktok.com/@nakfps',
       profileImg: 'https://files.passeidireto.com/618a268e-80a5-498f-93ef-d6df4108ee14/618a268e-80a5-498f-93ef-d6df4108ee14.jpeg',
+      history: lorisIpsum1000,
     },
     lett: {
       name: 'Lett',
@@ -113,6 +140,7 @@ const infoData = [
       twitter: 'https://twitter.com/lett1337',
       tiktok: 'https://www.tiktok.com/@lettpereira?lang=pt-BR',
       profileImg: 'https://i.redd.it/lett-pereira-v0-gxoputbcc86c1.png?width=720&format=png&auto=webp&s=93b82f507d2864d164cb2a49f1d926b26c1fdff8',
+      history: lorisIpsum1000,
     },
   },
 ];
