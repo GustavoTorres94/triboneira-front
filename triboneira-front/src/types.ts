@@ -134,7 +134,7 @@ export type InfoCardProps = {
   name: string;
   profileImg: string;
   nickname: string;
-  birthDate: string;
+  birthDate?: string;
   twitch?: string;
   youtube?: string;
   twitter?: string;
@@ -153,3 +153,7 @@ export type GenericAboutProps = {
   twitter?: string;
   youtube?: string;
 };
+
+export type InfoDataType = {
+  [key: string]: InfoCardProps;
+}[];
