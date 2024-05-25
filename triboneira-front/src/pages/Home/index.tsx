@@ -21,7 +21,7 @@ function Home() {
 
   useEffect(() => {
     dispatch(getAllStreams());
-  }, [dispatch]);
+  }, []);
 
   return (
     <div className={ styles.homeContainer }>

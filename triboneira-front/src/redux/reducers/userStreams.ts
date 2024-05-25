@@ -25,6 +25,7 @@ const userStreams = (state = INITIAL_STATE, action: AnyAction) => {
           login: e.login,
           display_name: e.display_name,
           profile_image_url: e.profile_image_url,
+          description: e.description,
         })),
         isLoading: false,
       };

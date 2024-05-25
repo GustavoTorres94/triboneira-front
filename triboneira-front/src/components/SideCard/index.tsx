@@ -2,16 +2,20 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Tooltip } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { getAllUsersStreams } from '../../redux/actions';
-import { SideCardProps, UserStreamType, AppDispatch } from '../../types';
+import {
+  SideCardProps,
+  UserStreamType,
+  AppDispatch,
+} from '../../types';
+import { createLocalStorage } from '../../utils/localStorage';
 import ToolTipComponet from '../ToolTip';
-
 import styles from './SideCard.module.css';
 
 function SideCard({ streamer, stream }: SideCardProps) {
   const dispatch = useDispatch<AppDispatch>();
   const response = useSelector((state: any) => state.stream);
-  const [images, setImages] = useState<{ [key: string]: string }>({});
   const userStream = useSelector((state: any) => state.userStreams);
+  const [images, setImages] = useState<{ [key: string]: string }>({});
 
   useEffect(() => {
     dispatch(getAllUsersStreams());
@@ -22,6 +26,8 @@ function SideCard({ streamer, stream }: SideCardProps) {
       acc[e.display_name] = e.profile_image_url;
       return acc;
     }, {});
+    createLocalStorage('streams', response.data);
+    createLocalStorage('userStreams', userStream.data);
     setImages(imagesApi);
   }, [userStream]);
 

@@ -51,6 +51,7 @@ export type UserStreamType = {
   login: string;
   display_name: string;
   profile_image_url: string;
+  description?: string;
 };
 
 export type UserReturnType = {
@@ -117,4 +118,38 @@ export type AdBannerProps = {
   text: string;
   imageArr: string[];
   linkTo: string;
+};
+
+export type CustonUserStreamerTypes = {
+  id: string;
+  display_name: string;
+  profile_image_url: string;
+};
+
+export type StreamerCardProps = {
+  streamer: CustonUserStreamerTypes[];
+};
+
+export type InfoCardProps = {
+  name: string;
+  profileImg: string;
+  nickname: string;
+  birthDate: string;
+  twitch?: string;
+  youtube?: string;
+  twitter?: string;
+  facebook?: string;
+  instagram?: string;
+  tiktok?: string;
+  history?: string;
+};
+
+export type GenericAboutProps = {
+  name: string;
+  birthDate: string;
+  facebook?: string;
+  instagram?: string;
+  twitch?: string;
+  twitter?: string;
+  youtube?: string;
 };
