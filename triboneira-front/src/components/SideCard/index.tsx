@@ -6,7 +6,6 @@ import {
   SideCardProps,
   UserStreamType,
   AppDispatch,
-  StreamCustonType,
 } from '../../types';
 import { createLocalStorage } from '../../utils/localStorage';
 import ToolTipComponet from '../ToolTip';
@@ -15,9 +14,8 @@ import styles from './SideCard.module.css';
 function SideCard({ streamer, stream }: SideCardProps) {
   const dispatch = useDispatch<AppDispatch>();
   const response = useSelector((state: any) => state.stream);
-  const [images, setImages] = useState<{ [key: string]: string }>({});
-
   const userStream = useSelector((state: any) => state.userStreams);
+  const [images, setImages] = useState<{ [key: string]: string }>({});
 
   useEffect(() => {
     dispatch(getAllUsersStreams());
@@ -28,7 +26,8 @@ function SideCard({ streamer, stream }: SideCardProps) {
       acc[e.display_name] = e.profile_image_url;
       return acc;
     }, {});
-    createLocalStorage('usersStreams', response.data);
+    createLocalStorage('streams', response.data);
+    createLocalStorage('userStreams', userStream.data);
     setImages(imagesApi);
   }, [userStream]);
 

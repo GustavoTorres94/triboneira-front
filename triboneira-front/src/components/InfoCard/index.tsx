@@ -12,7 +12,7 @@ import { InfoCardProps } from '../../types';
 import styles from './InfoCard.module.css';
 
 function InfoCard({
-  img,
+  profileImg,
   name,
   nickname,
   birthDate,
@@ -26,7 +26,7 @@ function InfoCard({
   return (
     <div className={ styles.container }>
       <div className={ styles.card }>
-        <img src={ img } alt="Streamer" />
+        <img src={ profileImg } alt="Streamer" />
         <h3>{ name }</h3>
         <p>{ nickname }</p>
         {birthDate && <p>{ birthDate }</p>}

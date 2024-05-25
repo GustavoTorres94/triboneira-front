@@ -131,8 +131,8 @@ export type StreamerCardProps = {
 };
 
 export type InfoCardProps = {
-  img: string;
   name: string;
+  profileImg: string;
   nickname: string;
   birthDate: string;
   twitch?: string;
@@ -141,6 +141,7 @@ export type InfoCardProps = {
   facebook?: string;
   instagram?: string;
   tiktok?: string;
+  history?: string;
 };
 
 export type GenericAboutProps = {

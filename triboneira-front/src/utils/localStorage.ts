@@ -20,6 +20,10 @@ function checkLocalStorage() {
   return localStorage.length;
 }
 
+function checkLocalStorageKey(key: string) {
+  return localStorage.getItem(key);
+}
+
 function removeLocalStorage(key: string) {
   return localStorage.removeItem(key);
 }
@@ -33,6 +37,7 @@ export {
   createMultipleLocalStorage,
   getLocalStorage,
   checkLocalStorage,
+  checkLocalStorageKey,
   removeLocalStorage,
   clearLocalStorage,
 };

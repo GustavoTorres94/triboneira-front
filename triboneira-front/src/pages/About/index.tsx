@@ -1,19 +1,34 @@
 /* eslint-disable react/jsx-max-depth */
 /* eslint-disable max-len */
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { useState, useEffect } from 'react';
+import { checkLocalStorageKey, getLocalStorage } from '../../utils/localStorage';
+import { getAllUsersStreams } from '../../redux/actions';
+import { UserStreamType, AppDispatch } from '../../types';
 import StreamerCard from '../../components/StreamerCard';
 import styles from './About.module.css';
 
 function About() {
+  const dispatch = useDispatch<AppDispatch>();
   const { data } = useSelector((state: any) => state.userStreams);
+  const [backup, setBackup] = useState<UserStreamType[]>([]);
+  useEffect(() => {
+    if (data.length === 0 && checkLocalStorageKey('userStreams')) {
+      const backupData = getLocalStorage('userStreams');
+      setBackup(backupData);
+    }
+    if (data.length === 0 && !checkLocalStorageKey('userStreams')) {
+      dispatch(getAllUsersStreams());
+    }
+  }, [data, dispatch]);
+
   return (
     <div className={ styles.aboutContainer }>
       <div className={ styles.cardContainer }>
-        <StreamerCard streamer={ data } />
+        <StreamerCard streamer={ data.length === 0 ? backup : data } />
       </div>
       <div className={ styles.contentContainer }>
         <div className={ styles.imgSide }>
-          <p>a</p>
           <img src="https://assets.gamearena.gg/wp-content/uploads/2023/04/30003948/A-Tribo-Gaules.jpg" alt="Tribo Img" />
         </div>
         <div className={ styles.textSide }>

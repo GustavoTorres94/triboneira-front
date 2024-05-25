@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getAllStreams } from '../../redux/actions';
 import { AppDispatch } from '../../types';
