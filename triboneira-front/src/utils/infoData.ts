@@ -1,3 +1,4 @@
+import { InfoDataType } from '../types';
 /* eslint-disable max-len */
 const lorisIpsum1000 = `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
@@ -15,10 +16,11 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`;
 
-const infoData = [
+const infoData: InfoDataType = [
   {
     Gaules: {
       name: 'Alexandre Borba Chiqueta',
+      nickname: 'Gaulês',
       birthDate: '02/12/1983',
       facebook: 'https://www.facebook.com/gaules',
       instagram: 'https://www.instagram.com/gaules/',
@@ -31,6 +33,7 @@ const infoData = [
     },
     liminhag0d: {
       name: 'André Kenzo',
+      nickname: 'Sapo Cego',
       birthDate: '11/11/2003',
       instagram: 'https://www.instagram.com/liminhagg/',
       twitch: 'https://www.twitch.tv/liminhag0d',
@@ -42,6 +45,7 @@ const infoData = [
     },
     velhovamp: {
       name: 'Victor Taube',
+      nickname: 'Velhovamp',
       birthDate: '27/01/1985',
       instagram: 'https://www.instagram.com/velhovamp1/',
       twitch: 'https://www.twitch.tv/velhovamp',
@@ -53,6 +57,7 @@ const infoData = [
     },
     boltz: {
       name: 'Ricardo Prass',
+      nickname: 'boltz',
       birthDate: '10/04/1997',
       facebook: 'https://www.facebook.com/boltzcs',
       instagram: 'https://www.instagram.com/boltzcs/',
@@ -63,7 +68,8 @@ const infoData = [
       history: lorisIpsum1000,
     },
     Michel: {
-      name: 'Michel',
+      name: 'Jean Michel D Oliveira',
+      nickname: 'MCH_agg',
       birthDate: '04/07/1989',
       facebook: 'https://www.facebook.com/AGGLifestyle/',
       instagram: 'https://www.instagram.com/mch_agg/',
@@ -75,6 +81,7 @@ const infoData = [
     },
     bt0tv: {
       name: 'Filipe Moreno',
+      nickname: 'bt0tv',
       birthDate: '22/05/1987',
       facebook: 'https://www.facebook.com/fillipebt/?locale=pt_BR',
       instagram: 'https://www.instagram.com/fillipebt/',
@@ -87,6 +94,7 @@ const infoData = [
     },
     ale_apoka: {
       name: 'Alessandro Marcucci',
+      nickname: 'Apoka',
       birthDate: '09/12/1985',
       facebook: 'https://www.facebook.com/aleapokaaa/?locale=pt_BR',
       instagram: 'https://www.instagram.com/ale_apoka/',
@@ -99,6 +107,7 @@ const infoData = [
     },
     LLauqSTV: {
       name: 'Diego Sanches',
+      nickname: 'LlauqS',
       birthDate: '10/04/1990',
       facebook: 'https://www.facebook.com/llauqS/?locale=pt_BR',
       instagram: 'https://www.instagram.com/llauqstv/',
@@ -111,6 +120,7 @@ const infoData = [
     },
     gaulestv: {
       name: 'NapaZika e Amarelo',
+      nickname: 'GaulesTV',
       facebook: 'https://www.facebook.com/gaules',
       instagram: 'https://www.instagram.com/gaules/',
       twitch: 'https://www.twitch.tv/gaules',
@@ -122,6 +132,7 @@ const infoData = [
     },
     RNakano: {
       name: 'Renato Nakano',
+      nickname: 'Nak',
       birthDate: '10/07/1987',
       facebook: 'https://www.facebook.com/nakfps/?locale=pt_BR',
       instagram: 'https://www.instagram.com/rnakano/',
@@ -133,7 +144,8 @@ const infoData = [
       history: lorisIpsum1000,
     },
     lett: {
-      name: 'Lett',
+      name: 'Letícia Pereira',
+      nickname: 'Lett',
       birthDate: '10/04/1997',
       instagram: 'https://www.instagram.com/_lettpereira/',
       twitch: 'https://www.twitch.tv/lett',

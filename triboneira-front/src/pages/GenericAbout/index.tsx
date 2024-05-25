@@ -56,8 +56,9 @@ function GenericAbout() {
   const { display_name, description } = streamerBackup;
 
   const restOfCardInfo: InfoCardProps[] = infoData
-    .map((info) => info[display_name] || {});
+    .map((info) => info[display_name || 'default']);
   const { name,
+    nickname,
     birthDate,
     facebook,
     instagram,
@@ -80,7 +81,7 @@ function GenericAbout() {
         <InfoCard
           profileImg={ profileImg }
           name={ name }
-          nickname={ display_name }
+          nickname={ nickname }
           birthDate={ birthDate }
           facebook={ facebook }
           instagram={ instagram }
