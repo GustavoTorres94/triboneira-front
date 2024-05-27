@@ -51,7 +51,7 @@
   </li>
 
   <li>
-    Utilize o script de desnvolvimento para rodar a aplicação
+    Utilize o script de desnvolvimento para rodar a aplicação; A app está na port :5173
 
     npm run dev
 
@@ -101,13 +101,13 @@ App desenvolvida com o uso de React.<br>
 Optei por utilizar o Redux para gerenciar o estado global da aplicação, que está no diretório src/redux.<br>
 
 
+
 ### Testes
-<!--> EditarMaisTarde
-A aplicação foi testada utilizando o Jest, Mocha e Chai. Os testes são unitários e estão no diretório de testes.<br>
+A aplicação foi testada utilizando o Jest e Vitest. Os testes são unitários e estão no diretório de testes.<br>
 Os comandos para testar a aplicação são os seguintes:
 
-    npm run test:local
-    npm run test:coverage
+    npm run test
+    npm run coverage
 
 ### Tecnologias
 
