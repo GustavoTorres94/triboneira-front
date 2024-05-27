@@ -1,4 +1,4 @@
-<h1 align="center"> Triboinera Web Site :computer: </h1>
+<h1 align="center"> Triboneira Web Site :computer: </h1>
 
 <div align="center"> 
   
